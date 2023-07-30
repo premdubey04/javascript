@@ -1,0 +1,43 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.circle{
+    position: absolute;
+    top:45%;
+    left:45%;
+    background-color:transparent;
+
+    height:500px;
+    width:500px;
+    border-radius: 50%;
+    border:1px solid black;
+    pointer-events: none;
+    z-index:1;
+    transform: translate(-50%, -50%);
+    background:transparent;
+    background-size:contain ;
+    background: url("https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"); /* Set the image as the background of the circle */
+  background-size:370%;
+ 
+    clip-path: circle(50%);
+}
